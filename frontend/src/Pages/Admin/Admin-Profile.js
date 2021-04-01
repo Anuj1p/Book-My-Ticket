@@ -5,67 +5,69 @@
  
 import React from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
-import Navbar_UserProfile from './Navbar/Navbar_AdminProfile'
+import Navbar_AdminProfile from './Navbar/Navbar_AdminProfile'
 import {NavBtnLink} from './Navbar/Navbarcp'
-import FileUpload from './Admin-Avatar'
+import 'antd/dist/antd.css';
+import {Avatar} from 'antd'
+import {UserOutlined} from '@ant-design/icons'
+import './Admin-Profile.css'
 
 
-const Admin_Profile = () => {
+
+const Admin_Profile = props => {
     return (
-            <>
-            <Router>
-            <Navbar_UserProfile/>
-            </Router>
-            <table width="100%">
-                <tr>
-                    <td>
-                        <div>
-                        <h2>Profile Picture</h2>
-                        </div>
-                        <div>
-                        <FileUpload/>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                        <div>
-                        <label>Full Name:</label>
-                        </div> 
-                        <div>
-                        <input type="name"></input>
-                        </div>
-                        <br/>
-                        <div>
-                        <Router><NavBtnLink to="/">Update</NavBtnLink></Router>
-                        </div>
-                        <br/>
-                        <div>
-                        <label>Email:</label>
-                        </div>
-                        <div>
-                        <input type="email"></input>
-                        </div>
-                        </div>
-                        <br/>
-                        <div>
-                        <div>
-                        <label>Pasword:</label>
-                        </div>
-                        <div>
-                        <input type="pasword"></input>
-                        </div>
-                        <br/>
-                        <div>
-                        <Router><NavBtnLink to="/">Update</NavBtnLink></Router>
-                        </div>
-                        </div>
-                    </td>
-                </tr>          
+        <div className="container-fluid">
+          <Router>
+            <Navbar_AdminProfile/>
+            </Router>  
+        <div className="row align-items-start">
+        <div className="col">
+        <Avatar size={65} icon={<UserOutlined />}/>
+        </div>
+        <div className="col">
+        <div>
+                <div>
+                    <label>Full Name:</label>
+                </div> 
+                <div>
+                    <input type="name"></input>
+                </div>
+                <br/>
+                <div>
+                    <Router><NavBtnLink to="/">Update</NavBtnLink></Router>
+                </div>
+                        
+                <br/>
+                <div>
+                    <label>Email:</label>
+                </div>
+                <div>
+                    <input type="email"></input>
+                </div>
+                </div>
+                <br/>
+                <div>
+                <div>
+                    <label>Password:</label>
+                </div>
+                <div>
+                    <input type="password"></input>
+                </div>
+                <br/>
+                <div>
+                    <Router><NavBtnLink to="/">Update</NavBtnLink></Router>
+                </div>
+                </div>
+            </div>
+    </div>
+  </div>
             
-            </table>
-            </>
     )
 }
 
 export default Admin_Profile
 
+
+            
+            
+            

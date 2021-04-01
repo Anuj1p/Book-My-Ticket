@@ -10,6 +10,7 @@ import {NavBtnLink} from './Navbar/Navbarcp'
 import 'antd/dist/antd.css';
 import {Avatar} from 'antd'
 import {UserOutlined} from '@ant-design/icons'
+import './User-Profile.css'
 
 
 
