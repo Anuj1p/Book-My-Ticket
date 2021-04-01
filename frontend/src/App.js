@@ -8,7 +8,7 @@ import Admin_Profile from './Pages/Admin/Admin-Profile'
 function App() {
   return (
       <React.Fragment>
-        <Admin_Profile/>
+        <User_Profile/>
       </React.Fragment>
   );
 }

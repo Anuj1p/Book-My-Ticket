@@ -10,19 +10,19 @@ import {NavBtnLink} from './Navbar/Navbarcp'
 import 'antd/dist/antd.css';
 import {Avatar} from 'antd'
 import {UserOutlined} from '@ant-design/icons'
-import './Admin-Profile.css'
+import ImageAvatars from './Aavtar'
 
 
 
-const Admin_Profile = props => {
+const User_Profile = props => {
     return (
-        <div className="container-fluid">
+        <div>
           <Router>
             <Navbar_AdminProfile/>
             </Router>  
         <div className="row align-items-start">
         <div className="col">
-        <Avatar size={65} icon={<UserOutlined />}/>
+            <ImageAvatars/>
         </div>
         <div className="col">
         <div>
@@ -65,7 +65,7 @@ const Admin_Profile = props => {
     )
 }
 
-export default Admin_Profile
+export default User_Profile
 
 
             
