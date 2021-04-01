@@ -1,6 +1,7 @@
 import React from "react";
 import Avatar from "react-avatar-edit";
 import { useState } from "react";
+//This is avatar.js file
 
 function Avatar_User() {
   const [preview, setPreview] = useState(null);
