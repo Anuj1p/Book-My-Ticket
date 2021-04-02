@@ -2,7 +2,7 @@ import React from 'react';
 import Input from './Input' ;
 import './Login.css';
 import PermIdentityIcon from '@material-ui/icons/PermIdentity';
-//import '/home/sharma/Desktop/movie_booking-master/movie_booking/frontend/node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 
 const Login = props => {
     return (
