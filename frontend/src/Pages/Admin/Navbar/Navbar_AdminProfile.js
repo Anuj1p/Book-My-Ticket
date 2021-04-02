@@ -11,7 +11,7 @@ const Navbar_AdminProfile = () => {
         </NavLink>
         <Bars/>
         <NavMenu>
-        <NavLink to="/">Screens</NavLink>
+        <NavLink to="/" exact={true}>Screens</NavLink>
         <NavLink to="/">Movies</NavLink>
         </NavMenu>
         <NavBtn>
