@@ -1,42 +1,24 @@
-import React from "react";
-import Avatar from "react-avatar-edit";
-import { useState } from "react";
-//This is avatar.js file
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Avatar from '@material-ui/core/Avatar';
 
-function Avatar_User() {
-  const [preview, setPreview] = useState(null);
-  function onClose() {
-    setPreview(null);
-  }
-  function onCrop(pv) {
-    setPreview(pv);
-  }
-  function onBeforeFileLoad(elem) {
-    if (elem.target.files[0].size > 2000000) {
-      alert("File is too big!");
-      elem.target.value = "";
-    }
-  }
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    '& > *': {
+      margin: theme.spacing(9),
+      width : theme.spacing(12),
+      height: theme.spacing(12),
+    },
+  },
+}));
+
+export default function ImageAvatars() {
+  const classes = useStyles();
+
   return (
-    <div>
-      <Avatar
-        width={600}
-        height={300}
-        onCrop={onCrop}
-        onClose={onClose}
-        onBeforeFileLoad={onBeforeFileLoad}
-        src={null}
-      />
-      <br/>
-      {preview && (
-        <>
-          <img src={preview} alt="Preview" />
-          <a href={preview} download="avatar">
-            Download image
-          </a>
-        </>
-      )}
+    <div className={classes.root}>
+      <Avatar alt="Avatar" src=" " />
     </div>
   );
 }
-export default Avatar_User;

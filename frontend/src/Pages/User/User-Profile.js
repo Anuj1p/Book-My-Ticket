@@ -7,21 +7,20 @@ import React from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import Navbar_UserProfile from './Navbar/Navbar_UserProfile'
 import {NavBtnLink} from './Navbar/Navbarcp'
-import 'antd/dist/antd.css';
-import {Avatar} from 'antd'
-import {UserOutlined} from '@ant-design/icons'
+import ImageAvatars from './Avatar'
+import './User-Profile.css'
 
 
 
 const User_Profile = props => {
     return (
-        <div className="container-fluid">
+        <div>
           <Router>
             <Navbar_UserProfile/>
             </Router>  
         <div className="row align-items-start">
         <div className="col">
-        <Avatar size={65} icon={<UserOutlined />}/>
+            <ImageAvatars/>
         </div>
         <div className="col">
         <div>
