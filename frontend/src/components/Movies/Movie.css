@@ -11,13 +11,13 @@
 .container-card .movie-card{
   width: 25%;
   background-color: rgb(49, 73, 93);
-  height: 25em;
+  height: 40 rem;
   border-radius: 0.6em;
   display: flex;
 }
 
 .container-card .movie-card:hover{
-  box-shadow: 5px 10px 10px 1px rgba(0, 0, 0, 0.253);
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.43);
   cursor: pointer;
   transform: scale(1.03);
   transition: 400ms;
@@ -41,7 +41,7 @@
   font-size: 110%;
   float: right;
   margin-right: 30px;
-  background-color: rgb(235, 88, 88);
+  background-color: rgba(107, 128, 221, 0.301);
 }
 
 .container-card .movie-card .movie .movie-overview{

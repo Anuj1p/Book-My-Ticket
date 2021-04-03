@@ -26,7 +26,7 @@ const DUMMY_MOVIES = [
     {
         id: i++,
         title:'ALBERT HALL JAIPUR',
-        url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwmbXVHt8JY-h4pSCD05aDD1j19KLGF5HTZDvMJwRYF9UmDKmpWDnZ2mdQynY4Gl0XeTw&usqp=CAU',
+        url:'https://www.rajasthantourplanner.com/images/amberfortjaipur.jpg',
         description:'Albert Hall Museum Jaipur !',
         imdb : '8'
         
