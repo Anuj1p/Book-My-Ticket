@@ -10,23 +10,23 @@ import './App.css';
 
 const App = () => {
         return (
-                <React.Fragment>
-                        <Router>
-                        <AppBar />
-                        <main>
-                                <Route path="/auth/login" exact={true}>
-                                        <Login />
-                                </Route>
-                                <Route path="/auth/signup" exact={true}>
-                                        <SignUp />
-                                </Route>
-                                <Redirect  to="/" />
-                        </main>     
-                        </Router>
-                        <div className="container">
-                                <MovieList />
-                        </div>
-                </React.Fragment>
+              <React.Fragment>
+              <Router>
+              <AppBar /> 
+              <main>
+                  <Route path="/auth/login" exact={true}>
+                          <Login />
+                  </Route>
+                  <Route path="/auth/signup" exact={true}>
+                          <SignUp />
+                  </Route>
+                  <Route path="/" exact={true}>
+                  <MovieList />
+                  </Route>
+                  <Redirect  to="/" />
+              </main>  
+              </Router>   
+              </React.Fragment>
               );
 
 };
