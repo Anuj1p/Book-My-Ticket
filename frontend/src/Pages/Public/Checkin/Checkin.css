@@ -1,0 +1,19 @@
+
+.reserved {
+  background: rgb(41, 226, 233);
+  color: #fff;
+  display: inline-block;
+}
+
+.reserved::after {
+  content: 'RESERVED'
+}
+
+.available::after {
+  content: 'AVAILABLE'
+}
+
+.available {
+  color: rgb(13, 14, 13);
+}
+
