@@ -2,10 +2,12 @@ import React from 'react';
 import Input from './Input' ;
 import './Login.css';
 import PermIdentityIcon from '@material-ui/icons/PermIdentity';
-
+import Bar from './Bar'
 
 const Login = props => {
     return (
+        <div>
+        <Bar/>
         <div className="main-container">
             <div className="base-container">
                 <div className="header-login">SIGN IN</div>
@@ -25,6 +27,7 @@ const Login = props => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     ) ;
 
