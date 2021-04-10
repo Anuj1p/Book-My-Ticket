@@ -1,10 +1,12 @@
 import React,{useState} from 'react';
+import Bar from './Bar'
 import './Sign-Up.css';
 import validator from 'validator'
 import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
 import PermIdentityIcon from '@material-ui/icons/PermIdentity';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 const eye = <VisibilityIcon/>;
+
 
 
 const Sign_Up = () =>{
@@ -84,8 +86,10 @@ const Sign_Up = () =>{
     }
 
 return( 
-    
+    <div>
+    <Bar/>
     <div class = "main-container">
+     
       <div className="base-container">
         <div className="header-login">SIGN UP</div>
         <div className="vpn">
@@ -132,6 +136,7 @@ return(
         </form>
         </div>
       </div>
+    </div>
     </div>
 );
 };
