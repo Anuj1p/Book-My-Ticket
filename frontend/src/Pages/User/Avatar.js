@@ -38,4 +38,4 @@ function Avatar_User() {
     </div>
   );
 }
-export default Avatar_User; //hi
+export default Avatar_User; 
