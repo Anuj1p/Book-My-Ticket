@@ -6,7 +6,7 @@ body{
 }
 
 
-.main-container{
+/* .main-container{
   width: 30%;
   background-color: #345d80;
   height: 70%;
@@ -124,4 +124,113 @@ body{
   .i2:hover {
     color: #1d6e6a;
     cursor: pointer;
-   }
+   } */
+
+
+.main-container .base-container{
+  margin: 5% 10%;
+}
+
+.main-container .base-container  .header-login h1{
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+h1:after{
+  display: block;
+  height: 3px;
+  background-color: #1429a0;
+  content: " ";
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.main-container .base-container .content .form-container{
+  margin-bottom: 3%;
+}
+
+
+
+.main-container .base-container .content{
+  /* background: rgb(0, 26, 255); */
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.main-container .base-container .content label{
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+input[type=text], input[type=password]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  font-size: 20px;
+}
+
+input[type=submit]{
+  width: 100.2%;
+  padding: 10px;
+  font-size: 25px;
+  cursor: pointer;
+  font-weight: 100;
+}
+
+input[type=submit]:hover{
+  background-color: black;
+  color: azure;
+}
+
+input::-webkit-input-placeholder {
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.main-container .base-container .content i{
+  float: right;
+  margin-right: 2%;
+  margin-top: -13%;
+  z-index: 2;
+  position: relative;
+}
+
+span{
+  display: flex;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  color: rgb(224, 6, 6);
+}
+
+
+
+@media only screen and (max-width: 1024px){
+  .main-container .base-container .content{
+    margin: 10% 20%;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .main-container .base-container .content{
+    margin: 10%;
+  }
+}
+
+@media only screen and (max-width: 620px){
+  .main-container .base-container .content i{
+    margin-top: -16%;
+  }
+}
+
+@media only screen and (max-width: 425px){
+  .main-container .base-container .content{
+    margin: 0;
+  }
+
+  .main-container .base-container .content i{
+    margin-top: -17%;
+  }
+}

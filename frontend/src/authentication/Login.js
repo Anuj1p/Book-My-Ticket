@@ -10,10 +10,10 @@ const Login = props => {
         <Bar/>
         <div className="main-container">
             <div className="base-container">
-                <div className="header-login">SIGN IN</div>
-                <div className="vpn">
+                <div className="header-login"><h1>SIGN IN</h1></div>
+                {/* <div className="vpn">
                     <center><PermIdentityIcon style={{verticalAlign: "center", fontSize: 95}}/></center>
-                </div>
+                </div> */}
                 <div className="content">
                     <div>
                         <form>

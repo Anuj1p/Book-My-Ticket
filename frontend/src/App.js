@@ -1,5 +1,5 @@
 import React from 'react' ;
-import {BrowserRouter as Router, Route, Redirect } from 'react-router-dom' ;
+import {BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom' ;
 import Login from './authentication/Login'
 import SignUp from './authentication/Sign-Up'
 import Home from './Home'
@@ -12,7 +12,7 @@ const App = () => {
               <React.Fragment>
               <Router>
               
-              <main>
+              <Switch>
                   <Route path="/auth/login" exact={true}>
                           <Login />
                   </Route>
@@ -23,7 +23,7 @@ const App = () => {
                   <Home/>
                   </Route>
                   <Redirect  to="/" />
-              </main>  
+              </Switch>  
               </Router>   
               </React.Fragment>
               );

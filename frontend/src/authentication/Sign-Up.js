@@ -91,44 +91,44 @@ return(
     <div class = "main-container">
      
       <div className="base-container">
-        <div className="header-login">SIGN UP</div>
-        <div className="vpn">
+        <div className="header-login"><h1>SIGN UP</h1></div>
+        {/* <div className="vpn">
           <center><PermIdentityIcon style={{verticalAlign: "center", fontSize: 95}}/></center>
-        </div>
+        </div> */}
         <div className="content">
         <form>
-          <div style={{marginBottom:5}}> 
+           
             <label for="name">Full Name</label>
             <input type="text" id="name" value = {enteredName} onChange = {NameChange} placeholder="Enter Your Full Name Here" />
-          </div>
+          
 
-          <div> 
+           
             <label for="email">Email</label>
             <input type="text" id="email" value = {enteredemail} onChange = {emailChange} placeholder="Enter Your Email Here"/>
-          </div>
+          
 
-          <div>
-            <span style={{ color: 'white', fontSize:13,marginBottom:5,marginTop:1}}>{emailError}</span>
-          </div>
+          
+            <span>{emailError}</span>
+          
      
-          <div>
-            <label for="password">Password</label>
+          
+            <label for="password">Password</label>&nbsp;
             <input id="password" type={passwordShown ? "text" : "password"} value = {enteredpassword} onChange = {passwordChange} placeholder="Enter Your Password Here"/>
             <i onClick={togglePasswordVisiblity} class="i1">{eye}</i>
-          </div>
+          
 
-          <div>
-            <span style={{ color: 'white', fontSize:13,marginBottom:5,marginTop:1}}>{pswdError}</span> 
-          </div>
+          
+            <span>{pswdError}</span> 
+          
 
-          <div>
-            <label for="confirm">Confirm Password</label>
+          
+            <label for="confirm">Confirm Password</label>&nbsp;&nbsp;
             <input id="confirm" type={cpasswordShown ? "text" : "password"} value = {enteredconfirmpassword}  onChange = {confirmpasswordChange} placeholder="Re-enter Your Password Here"/>
             <i onClick={togglecPasswordVisiblity} class="i2">{eye}</i>
-          </div>
+          
 
           <div>
-            <span style={{  color: '#ffffff', fontSize:13,marginBottom:5,marginTop:1}}>{passwordError}</span> 
+            <span>{passwordError}</span> 
           </div>
 
           <input type="submit" value = "Sign-Up"/>
