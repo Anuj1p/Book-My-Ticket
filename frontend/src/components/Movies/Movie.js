@@ -16,7 +16,7 @@ const Movie = (props) => {
                             <img src={props.url} alt={props.title} />
                             <div className="movie-info">
                                 <h3>{props.title}</h3>
-                                <span>{props.imdb}<StarIcon style={{paddingTop:7, fontSize: 20}}/></span>
+                                <span>{props.imdb}<StarIcon style={{ fontSize: 25, color: 'white'}}/></span>
                             </div>
                             <div className="movie-overview">
                                 <h2>OVERVIEW:</h2>

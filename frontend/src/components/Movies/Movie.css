@@ -21,10 +21,14 @@
 
 .container-card .movie-card{
   /* width: 25%; */
-  background-color: rgb(49, 73, 93);
-  height: 40 rem;
+  background-color: rgb(255, 255, 255);
+  border: black;
+  border-style: solid;
+  border-width: 3px;
+  height: 400px;
   border-radius: 0.6em;
   display: flex;
+  
   
 }
 
@@ -49,15 +53,21 @@
 }
 
 .container-card .movie-card .movie .movie-info span{
-  margin-top: 5%;
-  font-size: 110%;
+  margin-top: 4%;
+  font-size: 120%;
   float: right;
-  margin-right: 30px;
-  background-color: rgba(107, 128, 221, 0.301);
+  margin-right: 25px;
+  /* border-radius: 80%; */
+  background-color:black;
+  color: white;
+  align-items: center;
+  height: 30px;
+  width: 45px;
 }
 
 .container-card .movie-card .movie .movie-overview{
   margin-top: 60px;
+  margin-left: 10px;
 }
 
 @media only screen and (max-width: 1370px){
