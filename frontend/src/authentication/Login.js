@@ -15,16 +15,15 @@ const Login = props => {
                     <center><PermIdentityIcon style={{verticalAlign: "center", fontSize: 95}}/></center>
                 </div> */}
                 <div className="content">
-                    <div>
-                        <form>
-                            <label for="name">Username</label>
-                            <Input type="text" id="name" Placeholder="Enter your full name"/>
-                            <label for="password">Password</label>
-                            <Input type="password" id="password" Placeholder="Be creative with the caption"/>
-                            <input type="submit" value="Log In"/>
-                        </form>
-                        <br/>
-                    </div>
+                    <form>
+                        <label for="name">Username</label>
+                        <Input style={{padding:"15"}}type="text" id="name" placeholder="Enter your full name"/>
+                        
+                        <label for="password">Password</label>
+                        <Input type="password" id="password" placeholder="Be creative with the caption"/>
+                        
+                        <input type="submit" value="Log In"/>
+                    </form>
                 </div>
             </div>
         </div>
