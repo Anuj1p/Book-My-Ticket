@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-do
 import Login from './authentication/Login'
 import SignUp from './authentication/Sign-Up'
 import Home from './Home'
-
+import LoginAd from './authentication/Admin-Login'
 import './App.css';
 
 
@@ -18,6 +18,9 @@ const App = () => {
                   </Route>
                   <Route path="/auth/signup" exact={true}>
                           <SignUp />
+                  </Route>
+                  <Route path="/auth/login/admin" exact={true}>
+                          <LoginAd />
                   </Route>
                   <Route path="/" exact={true}>
                   <Home/>

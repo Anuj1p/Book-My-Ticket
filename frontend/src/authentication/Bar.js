@@ -13,6 +13,7 @@ const AppBar = () => {
             </NavLink>
             <Bars/>
             <NavBtn>
+                <NavBtnLink to="/auth/login/admin">Admin Login</NavBtnLink>
                 <NavBtnLink to="/">Back</NavBtnLink>
             </NavBtn>
         </Nav>
