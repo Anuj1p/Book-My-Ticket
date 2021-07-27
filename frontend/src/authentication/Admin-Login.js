@@ -16,11 +16,11 @@ const Login = props => {
                 </div> */}
                 <div className="content">
                     <form>
-                        <label for="name">Username</label>
-                        <Input style={{padding:"15"}}type="text" id="name" placeholder="Enter your full name"/>
+                        <label for="name">Email</label>
+                        <Input style={{padding:"15"}}type="text" id="name" placeholder="Enter Your Email Here"/>
                         
                         <label for="password">Password</label>
-                        <Input type="password" id="password" placeholder="Be creative with the caption"/>
+                        <Input type="password" id="password" placeholder="Enter Your Password Here"/>
                         
                         <input type="submit" value="Log In"/>
                     </form>
